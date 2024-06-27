@@ -390,53 +390,6 @@ main .main-image {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-/* ======================== Experiences ======================== */
-#experiences .container {
-  display: grid;
-  place-content: center;
-  padding-inline: 2rem;
-}
-@media(min-width: 50em) {
-  #experiences .container {
-    padding-inline: 15rem
-  }
-}
-#experiences .job {
-  position: relative;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-}
-#experiences .job::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -1rem;
-  background-color: var(--txt-clr);
-  width: 3px;
-  height: 100%;
-}
-:where(#experiences .job) h2, h3 {
-  margin-block: 1rem;
-}
-#experiences .job h2::after {
-  float: right;
-  text-align: center;
-  font-size: .7rem;
-  background-color: var(--txt-clr);
-  color: var(--border-clr);
-  padding: .2rem;
-  width: 70px;
-}
-#experiences .job:first-child h2::after {
-  content: '2021, persent';
-}
-#experiences .job:last-child h2::after {
-  content: '2019, 2021';
-}
-#experiences .container .job p {
-  max-width: 500px;
-}
-
 /* ======================== Projects ======================== */
 .swiper-wrapper {
   display: flex;
@@ -472,7 +425,6 @@ main .main-image {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  align-items: start;
 }
 #contact .contact_info > div i {
   color: var(--first-clr);
